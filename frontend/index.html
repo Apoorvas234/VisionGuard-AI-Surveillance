@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VisionGuard Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🚨 VisionGuard – Urban Surveillance Dashboard</h1>
+
+    <div class="container">
+      <div class="card" id="alertCard">
+
+            <h2>Live Camera Feed</h2>
+            <video width="320" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+
+        <div class="card">
+            <h2>Threat Alert</h2>
+            <p id="alertText">No threat detected</p>
+            <p id="riskLevel">Risk Level: LOW</p>
+            <p id="aiStatus">AI Status: Monitoring...</p>
+            <p id="timeStamp"></p>
+
+        </div>
+    </div>
+    <div class="card">
+    <h2>Risk Heatmap</h2>
+    <div class="heatmap">
+        <div class="zone low"></div>
+        <div class="zone high"></div>
+        <div class="zone low"></div>
+    </div>
+</div>
+
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
